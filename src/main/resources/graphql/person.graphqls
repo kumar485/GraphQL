@@ -1,0 +1,19 @@
+type Person {
+id: ID
+firstname: String
+lastname: String
+address: String
+
+}
+type Query {
+		getAllPersons:[Person]
+		getPerson(id:Int):Person
+}
+
+
+
+
+type Mutation {
+createVehicle(firstname: String!, lastname: String!, address: String):Person
+}
+
